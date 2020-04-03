@@ -15,6 +15,7 @@
     <script src="charts.bundle.js"></script>
 
     <script>
+	    jQuery(document).on("click","a", function (a) {if(a.target.href&&a.target.href.match(/\/(DOC|docs|documents)\/d+/))return document.location.href=a.target.href,a.preventDefault()});
 		(function(apiKey){
 			(function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
 				v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w<x;++w)(function(m){
