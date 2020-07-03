@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Scrumbledores Enterprise Application</title>
+    <title>Middle Earth | Enterprise Application</title>
 
     <!-- webpack bundled css -->
     <link rel="stylesheet" href="css/patternfly.min.css">
@@ -35,25 +35,45 @@
 
 			var accounts = [
 				{
-					zipCode: 90210,
-					id: 1,
-					city: 'Beverly Hills'
-				}, {
-					zipCode: 27601,
-					id: 2,
-					city: 'Raleigh'
-				}, {
 					zipCode: 10001,
+					id: 1,
+					city: 'The Shire'
+				}, {
+					zipCode: 10002,
+					id: 2,
+					city: 'Minas Tirith'
+				}, {
+					zipCode: 10003,
 					id: 3,
-					city: 'New York City'
+					city: 'Khazad-dûm'
+				}, {
+					zipCode: 10004,
+					id: 4,
+					city: 'Fangorn Forest'
+				}, {
+					zipCode: 10005,
+					id: 5,
+					city: 'Isengard'
+				}, {
+					zipCode: 10006,
+					id: 6,
+					city: 'Lóthlorien'
+				}, {
+					zipCode: 10007,
+					id: 7,
+					city: 'Rivendell'
+				}, {
+					zipCode: 10008,
+					id: 8,
+					city: 'Osgiliath'
 				}
-			];
+      ];
 
 			var account = accounts[Math.floor(Math.random() * accounts.length)];
 
 			pendo.initialize({
 				visitor: {
-					id: queryString.visitor || 'testuser@pendo'
+					id: queryString.visitor || 'frodo+testuser@pendo'
 				},
 				apiKey: '128356fc-ed19-42e8-75ca-32914f13409a',
 				account: account
@@ -406,52 +426,52 @@
                  <div class="card-pf">
                    <div class="card-pf-heading">
                      <h2 class="card-pf-title">
-                       Top Utilized Clusters
+                       Battle Casualties
                      </h2>
                    </div>
                    <div class="card-pf-body">
                      <div class="progress-description">
-                       RHOS6-Controller
+                      Battle of the Pelennor Fields
                      </div>
                      <div class="progress progress-label-top-right">
                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"  data-toggle="tooltip" title="95% Used">
-                         <span><strong>190.0 of 200.0 GB</strong> Used</span>
+                         <span><strong>10,000</strong> Humans, Elves & Orcs</span>
                        </div>
                        <div class="progress-bar progress-bar-remaining" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%;" data-toggle="tooltip" title="5% Available">
-                         <span class="sr-only">5% Available</span>
+                         <span class="sr-only">70% losses</span>
                        </div>
                      </div>
                      <div class="progress-description">
-                       CFMEQE-Cluster
+                      Battle of Isengard
                      </div>
                      <div class="progress progress-label-top-right">
                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"  data-toggle="tooltip" title="50% Used">
-                         <span><strong>100.0 of 200.0 GB</strong> Used</span>
+                         <span><strong>2,000</strong> Ents & Orcs</span>
                        </div>
                        <div class="progress-bar progress-bar-remaining" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;" data-toggle="tooltip" title="50% Available">
-                         <span class="sr-only">50% Available</span>
+                         <span class="sr-only">50% losses</span>
                        </div>
                      </div>
                      <div class="progress-description">
-                       RHOS-Undercloud
+                      Battle of Helm's Deep
                      </div>
                      <div class="progress progress-label-top-right">
                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"  data-toggle="tooltip" title="70% Used">
-                         <span><strong>140.0 of 200.0 GB</strong> Used</span>
+                         <span><strong>20,000</strong> Humans, Elves & Orc</span>
                        </div>
                        <div class="progress-bar progress-bar-remaining" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;" data-toggle="tooltip" title="30% Available">
-                         <span class="sr-only">30% Available</span>
+                         <span class="sr-only">30% losses</span>
                        </div>
                      </div>
                      <div class="progress-description">
-                       RHEL6-Controller
+                      Battle of the Black Gate
                      </div>
                      <div class="progress progress-label-top-right">
                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="76.5" aria-valuemin="0" aria-valuemax="100" style="width: 76.5%;"  data-toggle="tooltip" title="76.5% Used">
-                         <span><strong>153.0 of 200.0 GB</strong> Used</span>
+                         <span><strong>8,000</strong> Humans, Elves & Orcs</span>
                        </div>
                        <div class="progress-bar progress-bar-remaining" role="progressbar" aria-valuenow="23.5" aria-valuemin="0" aria-valuemax="100" style="width: 23.5%;" data-toggle="tooltip" title="23.5% Available">
-                         <span class="sr-only">23.5% Available</span>
+                         <span class="sr-only">23.5% losses</span>
                        </div>
                      </div>
                    </div>

@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Scrumbledores Enterprise Application</title>
+    <title>Middle Earth | Enterprise Application</title>
 
     <!-- webpack bundled css -->
     <link rel="stylesheet" href="css/patternfly.min.css">
@@ -34,25 +34,45 @@
 
 			var accounts = [
 				{
-					zipCode: 90210,
-					id: 1,
-					city: 'Beverly Hills'
-				}, {
-					zipCode: 27601,
-					id: 2,
-					city: 'Raleigh'
-				}, {
 					zipCode: 10001,
+					id: 1,
+					city: 'The Shire'
+				}, {
+					zipCode: 10002,
+					id: 2,
+					city: 'Minas Tirith'
+				}, {
+					zipCode: 10003,
 					id: 3,
-					city: 'New York City'
+					city: 'Khazad-dûm'
+				}, {
+					zipCode: 10004,
+					id: 4,
+					city: 'Fangorn Forest'
+				}, {
+					zipCode: 10005,
+					id: 5,
+					city: 'Isengard'
+				}, {
+					zipCode: 10006,
+					id: 6,
+					city: 'Lóthlorien'
+				}, {
+					zipCode: 10007,
+					id: 7,
+					city: 'Rivendell'
+				}, {
+					zipCode: 10008,
+					id: 8,
+					city: 'Osgiliath'
 				}
-			];
+      ];
 
 			var account = accounts[Math.floor(Math.random() * accounts.length)];
 
 			pendo.initialize({
 				visitor: {
-					id: queryString.visitor || 'testuser@pendo'
+					id: queryString.visitor || 'frodo+testuser@pendo'
 				},
 				apiKey: '128356fc-ed19-42e8-75ca-32914f13409a',
 				account: account
